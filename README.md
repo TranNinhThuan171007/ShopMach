@@ -16,10 +16,6 @@ Mở `index.html` trong trình duyệt. Ảnh sản phẩm được tải từ U
 - Đặt hàng bằng COD hoặc chuyển khoản qua mã QR VietQR trong thư mục `Images/maqr.jpg`.
 - Giao diện responsive cho màn hình máy tính và điện thoại.
 
-## Lưu ý đăng nhập
-
-Đây là bản demo tĩnh. Tài khoản và mật khẩu được lưu trong `localStorage` của trình duyệt, không dùng xác thực máy chủ và không phù hợp cho dữ liệu thực. Khi triển khai cửa hàng thật, cần thay bằng API xác thực phía máy chủ và lưu mật khẩu an toàn.
-
 ## Cấu trúc thư mục
 
 - `index.html`: trang cửa hàng.
@@ -27,10 +23,6 @@ Mở `index.html` trong trình duyệt. Ảnh sản phẩm được tải từ U
 - `Scripts/`: JavaScript.
 - `Images/`: hình minh họa SVG dự phòng và tài sản hình ảnh của dự án.
 - `Sounds/`, `Videos/`: thư mục dành cho tài sản đa phương tiện của bài thực hành.
-
-## Ảnh chụp sản phẩm
-
-Ảnh sản phẩm tải trực tiếp từ CDN Unsplash. Ảnh hero: [Barry A — bàn phím cơ, chuột và tai nghe gaming](https://unsplash.com/photos/a-close-up-of-a-keyboard-and-a-mouse-CGD59BOP1zU). Ảnh trong danh mục là ảnh tham khảo theo từng loại thiết bị; ảnh có thể cần Internet và có thể thay đổi theo dịch vụ bên ngoài.
 
 ## Cải tiến demo
 
