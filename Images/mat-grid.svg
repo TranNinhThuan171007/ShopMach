@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <defs><linearGradient id="p" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#dfe9e2"/><stop offset="1" stop-color="#becdc4"/></linearGradient><filter id="s" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="8"/><feOffset dy="9"/><feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <g filter="url(#s)" transform="rotate(-9 200 160)">
+    <rect x="57" y="76" width="286" height="170" rx="19" fill="#24333a"/>
+    <rect x="62" y="81" width="276" height="158" rx="15" fill="url(#p)"/>
+    <path d="M78 97h246v126H78z" fill="none" stroke="#98aaa0" stroke-width="1"/>
+    <path d="M98 97v126m40-126v126m40-126v126m40-126v126m40-126v126m40-126v126M78 122h246M78 147h246M78 172h246M78 197h246" stroke="#a9b9b0" stroke-width="1" opacity=".65"/>
+    <path d="M80 99h44v21H80zm84 51h44v21h-44zm80 50h58v21h-58z" fill="#3156df" opacity=".75"/>
+    <circle cx="285" cy="119" r="18" fill="#e9a43c" opacity=".86"/>
+  </g>
+</svg>

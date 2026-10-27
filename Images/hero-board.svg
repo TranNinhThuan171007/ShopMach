@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420">
+  <defs>
+    <linearGradient id="board" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#f8f6ee"/>
+      <stop offset="1" stop-color="#cfd6d0"/>
+    </linearGradient>
+    <linearGradient id="mouse" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#f8f6ee"/>
+      <stop offset="1" stop-color="#b9c5be"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="9"/>
+      <feOffset dy="13"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".28"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" transform="rotate(-8 340 210)">
+    <rect x="76" y="106" width="510" height="232" rx="27" fill="#26353b"/>
+    <rect x="83" y="113" width="496" height="218" rx="21" fill="url(#board)"/>
+    <path d="M111 142h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm-285 34h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm-322 34h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm-284 34h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28zm38 0h68v22h-68zm78 0h28v22h-28zm38 0h28v22h-28zm38 0h28v22h-28z" fill="#d2d7d0"/>
+    <path d="M112 143h25v19h-25zm76 0h25v19h-25zm152 0h25v19h-25zm76 0h25v19h-25zm-228 34h25v19h-25zm114 0h25v19h-25zm152 0h25v19h-25zm-342 34h25v19h-25zm76 0h25v19h-25zm114 0h25v19h-25zm152 0h25v19h-25zm-304 34h25v19h-25zm114 0h62v19h-62z" fill="#3156df"/>
+    <path d="M112 145h25m51 0h25m102 0h25m51 0h25m-247 34h25m89 0h25m127 0h25m-317 34h25m51 0h25m89 0h25m127 0h25m-279 34h25m89 0h62" stroke="#f8f6ee" stroke-linecap="round" stroke-width="2" opacity=".8"/>
+    <circle cx="535" cy="306" r="4" fill="#e9a43c"/>
+  </g>
+  <g filter="url(#shadow)" transform="rotate(13 595 290)">
+    <path d="M592 223c-31 0-48 24-48 62v35c0 31 18 52 47 52s47-21 47-52v-35c0-38-16-62-46-62Z" fill="#26353b"/>
+    <path d="M591 230c-25 0-38 20-38 54v36c0 26 15 44 38 44s38-18 38-44v-36c0-34-12-54-38-54Z" fill="url(#mouse)"/>
+    <path d="M591 231v47m-37-4h74" fill="none" stroke="#7b8885" stroke-linecap="round" stroke-width="3"/>
+    <path d="M591 236v17" stroke="#3156df" stroke-linecap="round" stroke-width="4"/>
+  </g>
+  <circle cx="125" cy="353" r="5" fill="#e9a43c"/>
+</svg>

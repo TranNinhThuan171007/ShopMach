@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f1f3ef">
+    <meta name="description" content="Mạch tuyển chọn bàn phím, chuột và phụ kiện máy tính cho góc làm việc có cá tính.">
+    <title>Mạch — Phụ kiện cho góc máy của bạn</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="icon" type="image/svg+xml" href="Images/mach-mark.svg">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="Scripts/app.js" defer></script>
+    <script src="Scripts/enhancements.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <p>Phí vận chuyển 0đ cho đơn hàng từ 800.000đ</p>
+      <a href="#san-pham">Xem phụ kiện đang có</a>
+    </div>
+
+    <header class="site-header">
+        <a class="wordmark" href="#" aria-label="Mạch — về đầu trang">
+        <img class="wordmark-mark" src="Images/mach-mark.svg" alt="">
+        <span>Mạch<span class="wordmark-period">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <a href="#san-pham" class="nav-link is-current">Cửa hàng</a>
+        <a href="#bo-suu-tap" class="nav-link">Góc làm việc</a>
+        <a href="#ve-mach" class="nav-link">Về Mạch</a>
+      </nav>
+      <div class="header-actions">
+        <button class="account-button" id="open-account" type="button">Đăng nhập</button>
+        <label class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <span class="visually-hidden">Tìm phụ kiện</span>
+          <input id="search-input" type="search" placeholder="Tìm phụ kiện..." autocomplete="off">
+        </label>
+        <button class="cart-button" id="open-cart" type="button" aria-label="Mở giỏ hàng">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 8H6"></path><circle cx="9.5" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+          <span>Giỏ hàng</span>
+          <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="bo-suu-tap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-kicker"><span class="signal-dot"></span> Thiết bị chọn theo cách bạn làm việc</p>
+          <h1 id="hero-title">Một góc máy.<br><span>Đúng chất bạn.</span></h1>
+          <p class="hero-description">Bàn phím gõ đã tay, chuột vừa lòng bàn tay. Chọn món đồ nhỏ để mỗi ngày bên máy tính đều thật thoải mái.</p>
+          <a class="button button-light" href="#san-pham">Khám phá sản phẩm <span aria-hidden="true">↘</span></a>
+          <div class="hero-footnote"><span class="hero-line"></span><span>Đồ công nghệ, chọn bằng cảm giác.</span></div>
+        </div>
+        <div class="hero-art" aria-label="Góc làm việc sáng với màn hình, bàn phím và chuột" role="img">
+          <img src="https://images.unsplash.com/photo-1708714290616-5e22a3a75ad3?auto=format&fit=crop&w=2000&q=88" alt="Bàn phím cơ, chuột máy tính và tai nghe gaming trên mặt bàn tối màu" fetchpriority="high" referrerpolicy="no-referrer">
+          <a class="photo-credit" href="https://unsplash.com/photos/a-close-up-of-a-keyboard-and-a-mouse-CGD59BOP1zU" target="_blank" rel="noreferrer">Ảnh: Barry A / Unsplash</a>
+        </div>
+        <div class="hero-index" aria-hidden="true">M / 2026</div>
+      </section>
+
+      <section class="benefits" aria-label="Cam kết của Mạch">
+        <p><span class="benefit-mark">01</span> Sản phẩm được tuyển chọn</p>
+        <p><span class="benefit-mark">02</span> Đổi mới trong 7 ngày</p>
+        <p><span class="benefit-mark">03</span> Giao hàng toàn quốc</p>
+      </section>
+
+      <section class="featured section-wrap" aria-labelledby="featured-title">
+        <div class="featured-heading">
+          <div>
+            <p class="section-kicker">Những món đáng xem</p>
+            <h2 id="featured-title">Được chọn nhiều</h2>
+          </div>
+          <div class="featured-actions">
+            <a class="all-products-link" href="#san-pham">Xem tất cả sản phẩm <span aria-hidden="true">↘</span></a>
+            <button class="carousel-arrow" id="featured-prev" type="button" aria-label="Xem sản phẩm nổi bật trước">←</button>
+            <button class="carousel-arrow" id="featured-next" type="button" aria-label="Xem sản phẩm nổi bật tiếp theo">→</button>
+          </div>
+        </div>
+        <div class="featured-grid" id="featured-grid" aria-label="Sản phẩm nổi bật"></div>
+      </section>
+
+      <section class="catalog section-wrap" id="san-pham" aria-labelledby="catalog-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Chọn theo thói quen</p>
+            <h2 id="catalog-title">Món bạn sẽ dùng mỗi ngày</h2>
+          </div>
+          <p class="catalog-note">Thiết bị tốt không cần phô trương.<br>Chỉ cần vừa tay, vừa mắt, vừa việc.</p>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="category-list" role="group" aria-label="Lọc theo danh mục">
+            <button type="button" class="category-button is-selected" data-category="all" aria-pressed="true">Tất cả <span id="product-count">36</span></button>
+            <button type="button" class="category-button" data-category="keyboard" aria-pressed="false">Bàn phím</button>
+            <button type="button" class="category-button" data-category="mouse" aria-pressed="false">Chuột</button>
+            <button type="button" class="category-button" data-category="audio" aria-pressed="false">Âm thanh</button>
+            <button type="button" class="category-button" data-category="accessory" aria-pressed="false">Phụ kiện</button>
+          </div>
+          <label class="sort-control">Sắp xếp
+            <select id="sort-select" aria-label="Sắp xếp sản phẩm">
+              <option value="featured">Nổi bật</option>
+              <option value="price-low">Giá thấp trước</option>
+              <option value="price-high">Giá cao trước</option>
+              <option value="discount">Giảm giá nhiều</option>
+            </select>
+          </label>
+          <label class="price-filter">Khoảng giá
+            <select id="price-filter" aria-label="Lọc theo khoảng giá">
+              <option value="all">Mọi mức giá</option>
+              <option value="0-500000">Dưới 500.000đ</option>
+              <option value="500000-1000000">500.000–1.000.000đ</option>
+              <option value="1000000-2000000">1–2 triệu</option>
+              <option value="2000000-99999999">Trên 2 triệu</option>
+            </select>
+          </label>
+          <label class="sale-filter"><input id="sale-filter" type="checkbox"> Chỉ xem món giảm giá</label>
+          <button class="favorites-filter" id="favorites-filter" type="button" aria-pressed="false">♡ Yêu thích</button>
+          <button class="clear-filters" id="clear-filters" type="button">Xóa bộ lọc</button>
+        </div>
+
+        <p class="results-message" id="results-message" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <nav class="catalog-pagination" id="catalog-pagination" aria-label="Chuyển trang sản phẩm" hidden>
+          <button class="page-button" id="previous-page" type="button" aria-label="Trang trước">← <span>Trước</span></button>
+          <span class="page-status" id="page-status" aria-live="polite"></span>
+          <button class="page-button" id="next-page" type="button"><span>Tiếp</span> →</button>
+        </nav>
+        <div class="empty-state" id="empty-state" hidden>
+          <p>Chưa tìm thấy món phù hợp.</p>
+          <span>Thử từ khóa khác hoặc chọn lại danh mục nhé.</span>
+        </div>
+      </section>
+
+      <section class="editorial section-wrap" aria-labelledby="editorial-title">
+        <div class="editorial-art">
+          <div class="editorial-orbit" aria-hidden="true"></div>
+          <span class="editorial-label">WORK / REST / REPEAT</span>
+          <div class="editorial-copy">
+            <p>Không gian của riêng bạn</p>
+            <h2 id="editorial-title">Bắt đầu từ<br>một thay đổi nhỏ.</h2>
+            <a href="#san-pham">Tìm món hợp góc máy <span aria-hidden="true">↗</span></a>
+          </div>
+          <img src="https://images.unsplash.com/photo-1676285437162-3339a08f4f50?auto=format&fit=crop&w=1200&q=85" alt="Bàn làm việc cùng bàn phím và tai nghe" loading="lazy" referrerpolicy="no-referrer">
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="ve-mach">
+      <div class="footer-main">
+        <div>
+          <a class="wordmark footer-wordmark" href="#" aria-label="Mạch — về đầu trang">
+            <img class="wordmark-mark" src="Images/mach-mark.svg" alt="">
+            <span>Mạch<span class="wordmark-period">.</span></span>
+          </a>
+          <p class="footer-description">Phụ kiện máy tính được chọn<br>cho một góc làm việc dễ chịu hơn.</p>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-label">Liên hệ</p>
+          <a href="mailto:vipthuantran@gmail.com">vipthuantran@gmail.com</a>
+          <p class="student-id"> 6651071073</p>
+        </div>
+        <a class="back-to-top" href="#" aria-label="Lên đầu trang">Lên đầu trang <span aria-hidden="true">↑</span></a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Mạch. Trang web thực hành thiết kế web.</span>
+        <span>Thiết kế cho người thích ngồi lại bên chiếc máy của mình.</span>
+      </div>
+    </footer>
+
+    <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+      <div class="drawer-heading">
+        <div>
+          <p class="section-kicker">Đã chọn cho góc máy</p>
+          <h2 id="cart-title">Giỏ hàng <span id="drawer-count">(0)</span></h2>
+        </div>
+        <button class="icon-button" id="close-cart" type="button" aria-label="Đóng giỏ hàng">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+      <div class="cart-progress" id="cart-progress-wrap">
+        <p id="cart-progress-message" aria-live="polite">Thêm sản phẩm để bắt đầu giỏ hàng.</p>
+        <div class="cart-progress-track" aria-hidden="true"><span id="cart-progress-fill"></span></div>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <form class="coupon-form" id="coupon-form"><label for="coupon-code">Mã ưu đãi</label><div><input id="coupon-code" name="coupon" autocomplete="off" placeholder="Nhập MACH10"><button type="submit">Áp dụng</button></div><p id="coupon-message" aria-live="polite"></p></form>
+      <div class="cart-empty" id="cart-empty">
+        <p>Giỏ hàng đang trống.</p>
+        <span>Thêm món bạn thích để bắt đầu nhé.</span>
+      </div>
+      <div class="drawer-footer" id="drawer-footer" hidden>
+        <div class="cart-total"><span>Tạm tính</span><strong id="cart-subtotal">0đ</strong></div>
+        <div class="cart-total cart-grand-total"><span>Tổng thanh toán</span><strong id="cart-total">0đ</strong></div>
+        <button class="button button-primary checkout-link" id="checkout-link" type="button"> Đặt Hàng <span aria-hidden="true">↗</span></button>
+        <p>Phí vận chuyển được xác nhận khi đặt hàng.</p>
+      </div>
+      <p class="drawer-status visually-hidden" id="drawer-status" aria-live="polite"></p>
+    </aside>
+    <div class="account-backdrop" id="account-backdrop" hidden></div>
+    <div class="product-modal-backdrop" id="product-modal-backdrop" hidden></div>
+    <section class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="detail-title" aria-hidden="true" inert><button class="icon-button detail-close" id="close-detail" type="button" aria-label="Đóng chi tiết">×</button><div id="product-detail-content"></div></section>
+    <div class="checkout-backdrop" id="checkout-backdrop" hidden></div>
+    <section class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-title" aria-hidden="true" inert>
+      <button class="icon-button checkout-close" id="checkout-close" type="button" aria-label="Đóng thanh toán">×</button>
+      <div id="checkout-content">
+        <p class="section-kicker">Hoàn tất đơn hàng</p>
+        <h2 id="checkout-title">Thông tin nhận hàng</h2>
+        <form id="checkout-form">
+          <div class="checkout-fields">
+            <label>Họ và tên<input name="customerName" autocomplete="name" required maxlength="80" placeholder="Nguyễn Văn An"></label>
+            <label>Số điện thoại<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required pattern="[0-9+ .()-]{9,16}" placeholder="0912 345 678"></label>
+            <label class="checkout-address">Địa chỉ nhận hàng<textarea name="address" autocomplete="street-address" required maxlength="240" placeholder="Số nhà, đường, phường/xã, tỉnh/thành"></textarea></label>
+            <label class="checkout-address">Ghi chú<textarea name="note" maxlength="240" placeholder="Ghi chú thêm cho đơn hàng (không bắt buộc)"></textarea></label>
+          </div>
+          <fieldset class="payment-methods"><legend>Phương thức thanh toán</legend>
+            <label class="payment-option"><input type="radio" name="paymentMethod" value="cod" checked><span><strong>Thanh toán khi nhận hàng</strong><small>Thanh toán tiền mặt cho đơn vị giao hàng</small></span></label>
+            <label class="payment-option"><input type="radio" name="paymentMethod" value="bank"><span><strong>Chuyển khoản ngân hàng bằng QR</strong><small>Quét mã VietQR, nhập số tiền và mã đơn</small></span></label>
+          </fieldset>
+          <section class="bank-qr-panel" id="bank-qr-panel" hidden aria-labelledby="bank-qr-title">
+            <h3 id="bank-qr-title">Quét mã để chuyển khoản</h3>
+            <img src="Images/maqr.jpg" alt="Mã VietQR ngân hàng MB của Trần Ninh Thuận">
+            <div><p><span>Người nhận</span><strong>TRẦN NINH THUẬN</strong></p><p><span>Ngân hàng</span><strong>MB · 7111171007</strong></p><p><span>Số tiền</span><strong id="qr-amount">0đ</strong></p><p><span>Nội dung chuyển khoản</span><strong id="qr-reference">MACH-ORDER</strong></p></div>
+            <p class="qr-instruction">Mã QR là ảnh tĩnh; vui lòng nhập số tiền và nội dung đơn hàng như hiển thị. Cửa hàng cần đối soát giao dịch.</p>
+          </section>
+          <div class="checkout-summary"><span>Tổng thanh toán</span><strong id="checkout-total">0đ</strong></div>
+          <p class="checkout-message" id="checkout-message" role="status" aria-live="polite"></p>
+          <button class="button button-primary checkout-submit" id="checkout-submit" type="submit">Xác nhận đặt hàng</button>
+        </form>
+      </div>
+      <div class="checkout-success" id="checkout-success" hidden aria-live="polite"></div>
+    </section>    <section class="account-modal" id="account-modal" role="dialog" aria-modal="true" aria-labelledby="account-title" aria-hidden="true" inert>
+      <button class="icon-button account-close" id="close-account" type="button" aria-label="Đóng">×</button>
+      <p class="section-kicker">Tài khoản Mạch</p>
+      <h2 id="account-title">Chào bạn trở lại.</h2>
+      <p class="account-intro">Đăng nhập để lưu thông tin và tiếp tục chọn món cho góc máy.</p>
+      <div class="account-tabs" role="tablist" aria-label="Chọn hình thức tài khoản">
+        <button class="account-tab is-active" id="login-tab" type="button" role="tab" aria-selected="true" data-mode="login">Đăng nhập</button>
+        <button class="account-tab" id="register-tab" type="button" role="tab" aria-selected="false" data-mode="register">Tạo tài khoản</button>
+      </div>
+      <form id="account-form">
+        <label class="account-field" id="name-field" hidden>Họ và tên<input id="account-name" name="name" autocomplete="name" placeholder="Nguyễn An"></label>
+        <label class="account-field">Email<input id="account-email" name="email" type="email" autocomplete="email" placeholder="ban@email.com" required></label>
+        <label class="account-field">Mật khẩu<input id="account-password" name="password" type="password" autocomplete="current-password" minlength="6" placeholder="Ít nhất 6 ký tự" required></label>
+        <p class="account-message" id="account-message" role="status" aria-live="polite"></p>
+        <button class="button button-primary account-submit" id="account-submit" type="submit">Đăng nhập <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="account-note">Thông tin tài khoản chỉ lưu trên thiết bị này.</p>
+    </section>
+  </body>
+</html>
