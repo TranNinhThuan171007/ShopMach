@@ -1,10 +1,6 @@
 # ShopMach — Mạch, cửa hàng phụ kiện máy tính
 
-Website thương mại điện tử demo bằng HTML, CSS và JavaScript thuần, thực hiện theo LAB1.
-
-## Chạy trang web
-
-Mở `index.html` trong trình duyệt. Ảnh sản phẩm được tải từ Unsplash nên cần Internet; font chữ sử dụng Be Vietnam Pro.
+Website thương mại điện tử bằng HTML, CSS và JavaScript thuần.
 
 ## Chức năng
 
